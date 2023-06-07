@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.activity;
 
 
 import android.app.Activity;
@@ -13,6 +13,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.gromore.demo.R;
+import com.gromore.demo.ad.gm.GromoreBanner;
+import com.gromore.demo.ad.gm.GromoreInterstitialFull;
+import com.gromore.demo.ad.gm.GromoreReward;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private static final String TAG = MainActivity.class.getName();

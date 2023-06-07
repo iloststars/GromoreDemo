@@ -1,10 +1,8 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.manager;
 
 import android.app.Activity;
 import android.util.Log;
 
-import com.bytedance.msdk.adapter.util.Logger;
-import com.bytedance.msdk.api.GMAdEcpmInfo;
 import com.bytedance.msdk.api.v2.GMAdConstant;
 import com.bytedance.msdk.api.v2.GMMediationAdSdk;
 import com.bytedance.msdk.api.v2.GMSettingConfigCallback;
@@ -14,7 +12,6 @@ import com.bytedance.msdk.api.v2.slot.GMAdOptionUtil;
 import com.bytedance.msdk.api.v2.slot.GMAdSlotInterstitialFull;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class AdInterstitialFullManager {

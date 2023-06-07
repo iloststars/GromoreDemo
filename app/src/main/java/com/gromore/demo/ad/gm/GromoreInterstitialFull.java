@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.app.Activity;
 import android.util.Log;
@@ -10,6 +10,8 @@ import com.bytedance.msdk.api.AdError;
 import com.bytedance.msdk.api.reward.RewardItem;
 import com.bytedance.msdk.api.v2.ad.interstitialFull.GMInterstitialFullAdListener;
 import com.bytedance.msdk.api.v2.ad.interstitialFull.GMInterstitialFullAdLoadCallback;
+import com.gromore.demo.ad.config.Config;
+import com.gromore.demo.ad.manager.AdInterstitialFullManager;
 
 import java.util.Map;
 

@@ -1,7 +1,8 @@
-package com.gromore.demo;
+package com.gromore.demo.utils;
 
 import com.bytedance.msdk.adapter.pangle.PangleNetworkRequestInfo;
 import com.bytedance.msdk.api.v2.GMNetworkRequestInfo;
+import com.gromore.demo.ad.config.Config;
 
 public class SplashUtils {
     public static GMNetworkRequestInfo getGMNetworkRequestInfo() {

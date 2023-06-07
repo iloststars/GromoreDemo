@@ -1,10 +1,9 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.manager;
 
 import android.content.Context;
 import android.provider.Settings;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.bytedance.msdk.api.v2.GMAdConfig;
 import com.bytedance.msdk.api.v2.GMAdConstant;
@@ -13,6 +12,7 @@ import com.bytedance.msdk.api.v2.GMGdtOption;
 import com.bytedance.msdk.api.v2.GMMediationAdSdk;
 import com.bytedance.msdk.api.v2.GMPangleOption;
 import com.bytedance.msdk.api.v2.GMPrivacyConfig;
+import com.gromore.demo.ad.config.Config;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -1,6 +1,8 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.content.Context;
+
+import com.gromore.demo.ad.manager.GMAdManagerHolder;
 
 public class Gromore {
 

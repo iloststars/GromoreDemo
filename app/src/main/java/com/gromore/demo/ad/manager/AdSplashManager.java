@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.manager;
 
 import android.app.Activity;
 import android.util.Log;
@@ -12,6 +12,7 @@ import com.bytedance.msdk.api.v2.ad.splash.GMSplashAd;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdListener;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdLoadCallback;
 import com.bytedance.msdk.api.v2.slot.GMAdSlotSplash;
+import com.gromore.demo.utils.SplashUtils;
 
 import java.util.List;
 
