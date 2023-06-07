@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.app.Activity;
 import android.util.Log;
@@ -8,6 +8,8 @@ import com.bytedance.msdk.api.reward.RewardItem;
 import com.bytedance.msdk.api.v2.GMAdConstant;
 import com.bytedance.msdk.api.v2.ad.reward.GMRewardedAdListener;
 import com.bytedance.msdk.api.v2.ad.reward.GMRewardedAdLoadCallback;
+import com.gromore.demo.ad.config.Config;
+import com.gromore.demo.ad.manager.AdRewardManager;
 
 public class GromoreReward {
     private static final String TAG = GromoreReward.class.getName();

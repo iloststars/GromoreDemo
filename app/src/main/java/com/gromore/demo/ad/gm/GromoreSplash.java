@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.app.Activity;
 import android.util.Log;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import com.bytedance.msdk.api.AdError;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdListener;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdLoadCallback;
+import com.gromore.demo.ad.config.Config;
+import com.gromore.demo.ad.manager.AdSplashManager;
 
 public class GromoreSplash {
     public static final String EXTRA_FORCE_LOAD_BOTTOM = "extra_force_load_bottom";

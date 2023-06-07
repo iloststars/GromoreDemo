@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.config;
 
 public class Config {
     public static boolean DEBUG = true;

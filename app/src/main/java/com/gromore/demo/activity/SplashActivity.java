@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.KeyEvent;
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
+
+import com.gromore.demo.R;
+import com.gromore.demo.ad.gm.GromoreSplash;
 
 public class SplashActivity extends Activity {
     private GromoreSplash mGromoreSplash;

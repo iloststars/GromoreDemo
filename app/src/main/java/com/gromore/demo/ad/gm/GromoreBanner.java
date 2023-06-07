@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.app.Activity;
 import android.util.Log;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import com.bytedance.msdk.api.AdError;
 import com.bytedance.msdk.api.v2.ad.banner.GMBannerAdListener;
 import com.bytedance.msdk.api.v2.ad.banner.GMBannerAdLoadCallback;
+import com.gromore.demo.ad.config.Config;
+import com.gromore.demo.ad.manager.AdBannerManager;
 
 public class GromoreBanner {
     private static final String TAG = GromoreBanner.class.getSimpleName();
