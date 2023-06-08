@@ -1,4 +1,4 @@
-package com.gromore.demo.ad.gm;
+package com.gromore.demo;
 
 import android.app.Activity;
 import android.util.Log;

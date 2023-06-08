@@ -1,6 +1,7 @@
 package com.gromore.demo.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.ViewGroup;
@@ -19,12 +20,7 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         viewAd = findViewById(R.id.frame_ad);
-        mGromoreSplash = new GromoreSplash(this, viewAd, new GromoreSplash.AfujiaSplashListener() {
-            @Override
-            public void next() {
-                finish();
-            }
-        });
+        mGromoreSplash = new GromoreSplash(this, viewAd, this::finish);
         mGromoreSplash.showSplash();
     }
 
@@ -37,6 +33,7 @@ public class SplashActivity extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -44,4 +41,6 @@ public class SplashActivity extends Activity {
             mGromoreSplash.destroy();
         }
     }
+
+
 }
