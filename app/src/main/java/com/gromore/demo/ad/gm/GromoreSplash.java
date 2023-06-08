@@ -1,12 +1,14 @@
 package com.gromore.demo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 import android.view.ViewGroup;
 
 import com.bytedance.msdk.api.AdError;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdListener;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdLoadCallback;
+import com.gromore.demo.activity.MainActivity;
 import com.gromore.demo.ad.config.Config;
 import com.gromore.demo.ad.manager.AdSplashManager;
 
@@ -70,6 +72,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
+                goToMainActivity();
 
             }
 
@@ -80,6 +83,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
+                goToMainActivity();
             }
 
             @Override
@@ -89,6 +93,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
+                goToMainActivity();
             }
         };
     }
@@ -143,5 +148,11 @@ public class GromoreSplash {
 
     }
 
+    private void goToMainActivity() {
+        Intent intent = new Intent(context, MainActivity.class);
+        context.startActivity(intent);
+        mSplashContainer.removeAllViews();
+        context.finish();
+    }
 
 }

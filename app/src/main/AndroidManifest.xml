@@ -52,6 +52,23 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup,android:icon">
 
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <!-- Pangle start================== -->
         <provider
             android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
@@ -102,21 +119,6 @@
             android:name="com.qq.e.ads.ADActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
         <!-- GDT end================== -->
-
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".activity.SplashActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" />
 
 
     </application>
