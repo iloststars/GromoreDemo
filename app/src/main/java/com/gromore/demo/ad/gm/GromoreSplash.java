@@ -1,4 +1,4 @@
-package com.gromore.demo;
+package com.gromore.demo.ad.gm;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import com.bytedance.msdk.api.AdError;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdListener;
 import com.bytedance.msdk.api.v2.ad.splash.GMSplashAdLoadCallback;
+import com.gromore.demo.activity.LoginActivity;
 import com.gromore.demo.activity.MainActivity;
 import com.gromore.demo.ad.config.Config;
 import com.gromore.demo.ad.manager.AdSplashManager;
@@ -72,7 +73,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
-                goToMainActivity();
+                goToLoginActivity();
 
             }
 
@@ -83,7 +84,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
-                goToMainActivity();
+                goToLoginActivity();
             }
 
             @Override
@@ -93,7 +94,7 @@ public class GromoreSplash {
                     listener.next();
                     listener = null;
                 }
-                goToMainActivity();
+                goToLoginActivity();
             }
         };
     }
@@ -148,8 +149,8 @@ public class GromoreSplash {
 
     }
 
-    private void goToMainActivity() {
-        Intent intent = new Intent(context, MainActivity.class);
+    private void goToLoginActivity() {
+        Intent intent = new Intent(context, LoginActivity.class);
         context.startActivity(intent);
         mSplashContainer.removeAllViews();
         context.finish();
